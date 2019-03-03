@@ -1,0 +1,52 @@
+﻿
+<html>
+<head>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="JavaScript.js"></script>
+    <link href="StyleSheet2.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div>
+        <h1 class="header">
+            <span class="logo"><a href="#"><img class="logo" src="image/logo.png" /></a></span>
+            <span class="main"><span class="home">Home</span><span class="home">Menu</span><span class="home">AboutUs</span><span class="home">ContactUs</span></span>
+        </h1>
+    </div>
+    <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">AboutUs</a>
+            <a href="#">ContactUs</a>
+    </div>
+
+    <div>
+        <span style="font-size:30px; width:100px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    </div>
+    <div id="main">
+        <div id="itemPlace"></div>
+        <div id="placeHolder" class="head items">
+            <div class="demo"><img id="img" class="main_img" src="Images/Cran cooler.jpg" /></div>
+            <p class="name"><span id="name" class="head_name">Cran Cooler</span><span id="price" class="price"><b>1.49 <span><a href="#"><img id="cart" class="cart" src="image/add_to_cart-512   bf.png" /></a></span></b></span></p>
+            <a title="Add to Cart" href="#"> <p class="p_cart"><img class="cart" id="cart" /></p></a>
+            <p class="detail" id="description"><span id="details" class="details">Description</span>Creanberry juice with cinnamom stick, apple pie syrup, lime juice topped with sparkling water</p>
+        </div>
+        <button onclick="proceed()" class="proceed">Proceed to CheckOut</button>
+
+        <br />
+        <br />
+    </div>
+    <div class="footer">
+        <h2>
+            <span class="footer">
+                <span class="sites"><a href="#"><img class="sites" src="image/fb.png" /></a></span>
+                <span class="sites"><a href="#"><img class="sites" src="image/instagram.png" /></a></span>
+                <span class="sites"><a href="#"><img class="sites" src="image/snapchat.png" /></a></span>
+                <span class="sites"><a href="#"><img class="sites" src="image/twitter.png" /></a></span>
+            </span>
+        </h2>
+    </div>
+</body>
+</html>

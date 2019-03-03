@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="StyleSheet3.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+
+    <h1 class="header">
+        <span class="logo"><a href="#"><img class="logo" src="image/logo.png" /></a></span>
+        <span class="main"><span class="home">Home</span><span class="home">Menu</span><span class="home">AboutUs</span><span class="home">ContactUs</span></span>
+    </h1>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">AboutUs</a>
+        <a href="#">ContactUs</a>
+    </div>
+
+
+    <span style="font-size:30px; width:100px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+    <div class="checkout"></div>
+    <div id="table"></div>
+    <div id="totalCost"></div>
+    <div class="auto">Name: <input type="text" id="name" /> <br />
+    <button id="btn">Checkout</button>
+    </div>
+    <script type="text/javascript">
+        var checkOut = sessionStorage.getItem('cart');
+        if (sessionStorage.cart) {
+            checkOut = JSON.parse(sessionStorage.cart);
+        }
+
+
+
+        function removeItem(idx) {
+            console.log(idx);
+            checkOut.splice(idx, 1);
+            loadPage();
+        }
+
+        function loadPage() {
+            var table = '<table class="table"><th class="th"><tr class="tr"><td class="td">Type</td><td>Name</td><td>Price</td><td id="textAlign">Remove</td></tr></th>';
+
+            var tbody = '';
+            var totalCost = 0;
+            for (var i = 0; i < checkOut.length; i++) {
+                tbody += "<tr><td>" + checkOut[i].type + "</td><td>" + checkOut[i].name + "</td><td>$" + checkOut[i].price + "</td><td id = 'textAlign'><button onclick='removeItem(" + i + ")'>X</button></td></tr>";
+                totalCost += checkOut[i].price;
+            }
+            tbody += '<tr><td>Total</td><td></td><td>$' + totalCost + '</td></tr></table>'
+            document.getElementById("table").innerHTML = table + tbody;
+
+        }
+
+        loadPage();
+
+
+        $('#btn').click(function () {
+            var name = document.getElementById('name').value;
+            if (name != '') {
+                if (sessionStorage.cart) {
+                    var check = JSON.parse(sessionStorage.cart);
+                    var obj = {
+                        'name': $('#name').val(),
+                        'date': String(new Date),
+                        'items': check
+                    };
+
+                    var success = function (data, status) {
+
+                        $('#dialog').text('Thankyou, Your order is Successful, ' + name);
+                        $("#dialog").dialog("open");
+                        $(function () {
+                            $("#dialog").dialog({
+                                autoOpen: false,
+                                show: {
+                                    effect: "blind",
+                                    duration: 1000
+                                },
+                                hide: {
+                                    effect: "explode",
+                                    duration: 1000
+                                }
+                            });
+                        });
+
+                    };
+                    $.ajax({
+                        url: 'orders/add',
+                        method: "POST",
+                        data: JSON.stringify(obj),
+                        success: success,
+                        dataType: "json",
+                        contentType: "application/json"
+                    });
+                }
+            }
+            else {
+                alert('Please enter your name.')
+            }
+        });
+
+        $(function () {
+            $("#dialog").dialog({
+                autoOpen: false,
+                show: {
+                    effect: "blind",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "explode",
+                    duration: 1000
+                }
+            });
+
+            $("#opener").on("click", function () {
+                $('#dialog').text('Thankyou, Your order is Successful');
+                $("#dialog").dialog("open");
+
+            });
+        });
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "202px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <div id="dialog" title="Basic dialog">
+    </div>
+</body>
+</html>

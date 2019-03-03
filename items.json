@@ -1,0 +1,242 @@
+[
+  {
+    "type": "Appetizer",
+    "name": "Garlic Chicken",
+    "description": "Fried chicken tossed with garlic, greenchilles.",
+    "price": 7.99
+  },
+  {
+    "type": "Appetizer",
+    "name": "Harabara Kabab",
+    "description": "Melt in mouth deep fried patties of spinach & cottage cheese.",
+    "price": 6.49
+  },
+  {
+    "type": "Appetizer",
+    "name": "Kababneeza",
+    "description": "Chicken wings marinated in spiced yogurt & grilled in tandoor.",
+    "price": 7.99
+  },
+  {
+    "type": "Appetizer",
+    "name": "Murg Tikka",
+    "description": "Tender chicken marinated with spicy hung curd marinade,cooked in tandoor.",
+    "price": 7.99
+  },
+  {
+    "type": "Appetizer",
+    "name": "Panner Tikka",
+    "description": "Cubes of paneer marinated in yoghurt masala,glazed in the tandoor.",
+    "price": 8.99
+  },
+  {
+    "type": "Appetizer",
+    "name": "Pepper Fish",
+    "description": "Fried fish tossed with chopped onions,garlic and pepper.",
+    "price": 6.99
+  },
+  {
+    "type": "Appetizer",
+    "name": "Seekh Kabab",
+    "description": "Ground lamb tenderly spiced and grilled on skewers.",
+    "price": 17.99
+  },
+  {
+    "type": "Appetizer",
+    "name": "Shrimp Pakora",
+    "description": "Prawns covered in chickpea batter and fried.",
+    "price": 6.99
+  },
+  {
+    "type": "Appetizer",
+    "name": "Tawa Chicken",
+    "description": "Sliced cubes of boneless chicken sauteed wth tomatoes,onions and green peppers in a delicate touch of spices.",
+    "price": 8.49
+  },
+  {
+    "type": "Appetizer",
+    "name": "Vegetable Samosa",
+    "description": "Crispy fried dumplings stuffed with potatoes and vegetables.",
+    "price": 4.49
+  },
+  {
+    "type": "Entree",
+    "name": "Basmati Chawal",
+    "description": "A prized rice from India,steamed and served fresh.",
+    "price": 3.25
+  },
+  {
+    "type": "Entree",
+    "name": "Chicken Dum Biryani",
+    "description": "Chicken cooked with basmati rice and flavoured with herbs.",
+    "price": 10.49
+  },
+  {
+    "type": "Entree",
+    "name": "Egg Biryani",
+    "description": "Roasted egg,topped with cashews and cilantro,served over basmati rice.",
+    "price": 9.95
+  },
+  {
+    "type": "Entree",
+    "name": "Jeera Chawal",
+    "description": "Basmati rice seasoned and steamed with cumin.",
+    "price": 3.49
+  },
+  {
+    "type": "Entree",
+    "name": "Mattar Pulao",
+    "description": "Basmati rice cooked with green peas and lightly flavoured with saffron.",
+    "price": 5.49
+  },
+  {
+    "type": "Entree",
+    "name": "Mutton Dum Biryani",
+    "description": "Mutton cooked with basmati rice and flavoured with herbs.",
+    "price": 11.49
+  },
+  {
+    "type": "Entree",
+    "name": "Nimbu Chawal",
+    "description": "An aromatic basmati rice cooked with fresh lemons and tampered with roasted nuts and mustard seed.",
+    "price": 5.75
+  },
+  {
+    "type": "Entree",
+    "name": "Paneer Biryani",
+    "description": "Homemade cheese and root vegetables rice, topped with cashews and cilantro,served over basmati rice.",
+    "price": 9.95
+  },
+  {
+    "type": "Entree",
+    "name": "Shrimp Biryani",
+    "description": "Seared shrimp,topped with cashews and cilantro, served over basmati rice.",
+    "price": 16.95
+  },
+  {
+    "type": "Entree",
+    "name": "Vegetable Biryani",
+    "description": "Vegetables cooked with basmati rice, topped with chashews.",
+    "price": 9.25
+  },
+  {
+    "type": "Dessert",
+    "name": "Caramel Custurd",
+    "description": "Smooth and delicious caramel custard.",
+    "price": 5.49
+  },
+  {
+    "type": "Dessert",
+    "name": "Double Ka Meetha",
+    "description": "Hot crisp fried bread pudding saoked in cardamom flavour with dry fruits.",
+    "price": 5.49
+  },
+  {
+    "type": "Dessert",
+    "name": "Gajar Ka Halwa",
+    "description": "Grated carrots cooked gently in milk and sprinkled generously with nuts.",
+    "price": 6.49
+  },
+  {
+    "type": "Dessert",
+    "name": "Gulab Jamun",
+    "description": "Fried milk dumplings stuffed with dry fruits and saffron, drizzled with honey.",
+    "price": 4.49
+  },
+  {
+    "type": "Dessert",
+    "name": "Kesar Kulfi",
+    "description": "The quintessential frozen indian icecream, flavoured with saffron and cardamom.",
+    "price": 5.49
+  },
+  {
+    "type": "Dessert",
+    "name": "Kheer",
+    "description": "A favourite silky rice pudding served with an infusion of rose syrup and sprinkled with raisins and nuts.",
+    "price": 5.49
+  },
+  {
+    "type": "Dessert",
+    "name": "Khubhani Ka Meetha",
+    "description": "Stewed apricots steeped in honey syrup and topped with cream.",
+    "price": 4.99
+  },
+  {
+    "type": "Dessert",
+    "name": "Mulayam Rasmalai",
+    "description": "Extremely soft cottage cheese dumplings soaked in reduced milk,garnished with silvered pistachios.",
+    "price": 5.49
+  },
+  {
+    "type": "Dessert",
+    "name": "Pumpkin Cheesecake",
+    "description": "Pumpkin cheesecake topped with bourbon caramel sauce and whipped cream.",
+    "price": 6.49
+  },
+  {
+    "type": "Dessert",
+    "name": "Sizzling Brownie",
+    "description": "Walnut brownie on sizzler served with scoop of vanilla icecream and chocolate sauce.",
+    "price": 5.49
+  },
+  {
+    "type": "Drink",
+    "name": "Berry Patch",
+    "description": "Blue berry crush, vanilla ice cream, strawberry crush, cranberry juice.",
+    "price": 2.25
+  },
+  {
+    "type": "Drink",
+    "name": "Caribbean Exotica",
+    "description": "Blended together  pinepalle juice, coconut milk with crushed ice, garnished with a pineapple dice.",
+    "price": 1.49
+  },
+  {
+    "type": "Drink",
+    "name": "Cran Cooler",
+    "description": "Creanberry juice with cinnamom stick, apple pie syrup, lime juice topped with sparkling water.",
+    "price": 1.49
+  },
+  {
+    "type": "Drink",
+    "name": "Fruit Punch",
+    "description": "A combination of fruit juices blended with icec-cream.",
+    "price": 1.49
+  },
+  {
+    "type": "Drink",
+    "name": "Lemon Beat",
+    "description": "Lime water with a twist of basil and lemongrass.",
+    "price": 1.49
+  },
+  {
+    "type": "Drink",
+    "name": "Mango Rupture",
+    "description": "Mango with vanilla and coconut infused with mint.",
+    "price": 1.49
+  },
+  {
+    "type": "Drink",
+    "name": "Minting",
+    "description": "Mint leaf, green apple, green apple syrup, red bull, fresh cucumber, apple juice.",
+    "price": 2.49
+  },
+  {
+    "type": "Drink",
+    "name": "Spicy Island Punch",
+    "description": "Blended together orange juice, pine apple juice & tobasco sauce and crushed ice.",
+    "price": 1.49
+  },
+  {
+    "type": "Drink",
+    "name": "Tangy Mint",
+    "description": "Sweet lime, kiwi, orange mixed with basil leaves.",
+    "price": 1.49
+  },
+  {
+    "type": "Drink",
+    "name": "Watermelon Rollover",
+    "description": "Fresh watermelon, anise, watermelon, soda.",
+    "price": 1.49
+  }
+]

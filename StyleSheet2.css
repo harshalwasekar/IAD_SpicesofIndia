@@ -1,0 +1,188 @@
+﻿body {
+    margin: auto;
+    background-image: url("https://i.imgur.com/TnNwdvV.png");
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+div {
+    text-align: justify;
+}
+.home{}
+.main_img {
+    width: 300px;
+    height:250px;
+    padding-top:25px;
+    padding-bottom:3px;
+}
+
+.head {
+    padding-right: 10px;
+    padding-left:20px
+   }
+.sub_body {
+    padding-left:0px;
+}
+
+.name {
+    font-family: Comic Sans MS;
+}
+.p_cart {
+    background-color: #f28e43;
+    padding-left: 140px;
+    padding-bottom:0px;
+    padding-top:0px
+}
+.cart {
+    width: 20px;
+    height:20px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.price {
+    float: right;
+    padding-right: 2px
+}
+
+.head_name {
+    font: bold
+}
+
+.detail {
+    color: black;
+    font-family: Comic Sans MS;
+    width: 300px;
+    height: 92px
+}
+#placeHolder{
+    display:none;
+}
+.items {
+    float: right;
+    padding-right:10px;
+    padding-top:0px
+}
+h1 {
+    height: 100px;
+    background-color: #f28e43;
+    padding-bottom: 50px;
+    padding-right: 125px;
+    position: relative;
+}
+.logo {
+    position: absolute;
+    width: 220px;
+    height: 150px;
+    bottom: 0px;
+    left:120px
+}
+
+.home {
+    padding-left: 30px;
+    background-color: #f18f44
+}
+.main {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    color: #8a281f;
+    font-family: Comic Sans MS;
+}
+.description{
+    overflow:hidden;
+    height:20px;
+    padding-top:0px
+}
+.table{
+    float:left;
+    position:fixed;
+}
+.list {
+    padding-left: 2px;
+    width: 100px;
+    height: 40px;
+    padding-bottom: 1px;
+    padding-top: 3px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSacyZKXOodpn85acdkemnFo590QDLjVGk0SsdL5RukibB_3BDS")
+}
+ul {
+    list-style-type: none;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSacyZKXOodpn85acdkemnFo590QDLjVGk0SsdL5RukibB_3BDS");
+    height:800px;
+}
+
+/*Sidebar*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+    .sidenav a {
+        width:50px;
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #f28e43;
+        display: block;
+        transition: 0.3s;
+    }
+
+        .sidenav a:hover {
+            color: #8a281f;
+        }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 300px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}
+
+.proceed {
+    float:right;
+    position:fixed;
+    bottom:40%;
+    background-color:#f28e43;
+    width:160px;
+    height:50px;
+}
+
+/*//footer*/
+.sites{
+    width:30px;
+    height:30px;
+}
+.footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f28e43;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,110 @@
+﻿body {
+    margin: auto;
+    background-image: url("https://i.imgur.com/TnNwdvV.png");
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+/*header*/
+
+h1 {
+    height: 100px;
+    background-color: #f28e43;
+    padding-bottom: 50px;
+    padding-right: 125px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    width: 220px;
+    height: 150px;
+    bottom: 0px;
+    left: 120px
+}
+
+.home {
+    padding-left: 30px;
+    background-color: #f18f44
+}
+
+.main {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    color: #8a281f;
+    font-family: Comic Sans MS;
+}
+
+/*navBar*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+    .sidenav a {
+        width: 50px;
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #f28e43;
+        display: block;
+        transition: 0.3s;
+    }
+
+        .sidenav a:hover {
+            color: #8a281f;
+        }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 300px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}
+
+/*Table*/
+table{
+    margin:auto;
+    border: solid;
+    /*border-collapse: collapse;*/
+}
+td{
+    width:100px;
+    /*border: solid;*/
+    
+}
+#textAlign {
+    text-align: center;
+}
+#btn {
+    margin: auto;
+    bottom: 40%;
+    background-color: #f28e43;
+    width: 160px;
+    height: 50px;
+}
+.auto{margin:auto}
